@@ -203,6 +203,9 @@ body{
 .bg-dark{
 	background-color: transparent!important;
 }
+.modal-content{
+	background: #222;
+}
 @media only screen and (orientation:portrait) {
     .main-heading h1{
     	font-size: 2rem; 
