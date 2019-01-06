@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <title>Zealicon'19 - Coming Soon</title>
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <div class="hero">
       <div class="fullscreen-video-wrap">
         <video autoplay muted loop id="myVideo">
@@ -85,10 +85,13 @@
       <p>
         JSSATE, Noida following its legacy of doing things extraordinary and setting benchmarks, put up a splendid fest, thereby adding another leaf to its success story. The students and staff put in a joint effort, working tirelessly since December, to hold a College Fest. The four day fest, which is a Techno-Cultural extravaganza, had a plethora of exciting events with a huge number of participants. The production work gave a new edge to the ambience of the College with a creative design that showcased aesthetic skills of the finest artists. The success of Fest can be easily evaluated by the fact that it witnessed a turnout of more than 6,000, and every evening had a perfect ending with various events and Battle of Bands to conclude the Fest.
       </p>
-      <div class="stats">
+      <div class="stats" id="counter">
         <div class="stat">
           <div class="number">
-            200+
+            <span data-count="200" data-speed="400" class="counter-value">
+            100
+          </span>
+          <span class="plus_sign">+</span>
           </div>
           <div class="label">
             events
@@ -96,7 +99,10 @@
         </div>
         <div class="stat">
           <div class="number">
-            10000+
+            <span data-count="10000" data-speed="400" class="counter-value">
+            1000
+          </span>
+          <span class="plus_sign">+</span>
           </div>
           <div class="label">
             footfall
@@ -104,12 +110,16 @@
         </div>
         <div class="stat">
           <div class="number">
-            34000+
+            <span data-count="34000" data-speed="400" class="counter-value">
+            10000
+          </span>
+          <span class="plus_sign">+</span>
           </div>
           <div class="label">
             reach            
           </div>
         </div>
+        <!-- <h1 class="counter-value" data-count="200" data-speed="500" style="display: inline-block;">20</h1><h1 style="display: inline-block;">+</h1> -->
       </div>
     </div>     
           </div>
@@ -166,11 +176,12 @@
           </div>
         </div>
       </div>
-      
       </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+   </body>
 </html>
