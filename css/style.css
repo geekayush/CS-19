@@ -17,6 +17,26 @@
   font-family: GamePlayed;
   src: url(../assets/fonts/GamePlayed.otf);
 }
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+.ui-autocomplete { position: absolute; cursor: default;z-index:9999 !important;}  
+.modal-header,.modal-footer{
+	border: 0;
+}
+form input{
+	width:90%;
+}
+form .row{
+	margin-bottom: 12px;
+}
+.modal-content{
+	padding: 10px;
+}
 body{
 	overflow-x: hidden;
 	color: white;
