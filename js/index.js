@@ -50,3 +50,13 @@ var a = 0;
                     a = 1;
                 }
             });
+var check = function() {
+  if (document.getElementById('psd').value ==
+    document.getElementById('cnfpsd').value) {
+    document.getElementById('message').style.color = 'green';
+    document.getElementById('message').innerHTML = 'Matching';
+  } else {
+    document.getElementById('message').style.color = 'red';
+    document.getElementById('message').innerHTML = 'Not matching';
+  }
+}
