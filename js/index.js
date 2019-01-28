@@ -60,3 +60,32 @@ var check = function() {
     document.getElementById('message').innerHTML = 'Not matching';
   }
 }
+var loginResponse = function(){
+    var data = JSON.parse(this.response);
+    if((data.response == '200_1') || (data.response == 'Already logged in.')){
+        window.location.href = 'http://register.zealicon.in/campusambassador';
+    }
+}
+var signupResponse = function(){
+    var data = JSON.parse(this.response);
+    if(data.response == 'user created'){
+        window.location.href = 'http://register.zealicon.in/login';
+    }
+    console.log(data);
+}
+var loginSubmit = function(){
+    var data =  JSON.stringify({username:document.getElementById('loginUsername').value,password:document.getElementById('loginPassword').value,token:'zealog476'});
+    var http = new XMLHttpRequest();
+    http.withCredentials = true;
+    http.open('POST', 'http://register.zealicon.in/login', true);
+    http.addEventListener('load',loginResponse);
+    http.send(data);
+}
+var signupSubmit = function(){
+    var data =  JSON.stringify({first_name:document.getElementById('firstName').value,last_name:document.getElementById('lastName').value,email:document.getElementById('email').value,username:document.getElementById('username').value,password:document.getElementById('psd').value,college:document.getElementById('college').value,contact:document.getElementById('phoneNumber').value,token:'signpo354'});
+    var http = new XMLHttpRequest();
+    http.withCredentials = true;
+    http.open('POST', 'http://register.zealicon.in/signup', true);
+    http.addEventListener('load',signupResponse);
+    http.send(data);
+}

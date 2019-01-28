@@ -23,7 +23,6 @@
     <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
-      <form method="POST" action="http://register.zealicon.in/login">
       <div class="modal-header">
         <h5 class="modal-title"><strong>LOGIN</strong></h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Cancel">
@@ -37,7 +36,7 @@
                 <label>Username</label>
               </div>
               <div class="col-9">
-                <input type="text" name="username">
+                <input type="text" name="username" id="loginUsername">
               </div>
             </div>
             <div class="row">
@@ -45,17 +44,16 @@
                 <label>Password</label>
               </div>
               <div class="col-9">
-                <input type="password" name="password">
+                <input type="password" name="password" id="loginPassword">
               </div>
             </div>
           <input type="hidden" name="token" value="zealog476">
           <input type="hidden" name="temp" value="true">
           <div class="modal-footer">
-        <input type="button" class="btn btn-secondary" data-dismiss="modal" value="Cancel">
-        <input type="submit" class="btn btn-primary" value="Login">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="submit" class="btn btn-primary" onclick="loginSubmit()">Log In</button>
       </div>
     </div>
-    </form>
     </div>
     </div>
   </div>
@@ -63,7 +61,6 @@
 <div class="modal fade" id="signup-modal" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
-      <form method="POST" action="http://register.zealicon.in/signup">
       <div class="modal-header">
         <h5 class="modal-title"><strong>SIGN UP</strong></h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Cancel">
@@ -77,7 +74,7 @@
                 <label>First Name</label>
               </div>
               <div class="col-9">
-                <input type="text" name="first_name">
+                <input type="text" name="first_name" id="firstName">
               </div>
             </div>
             <div class="row">
@@ -85,7 +82,7 @@
                 <label>Last Name</label>
               </div>
               <div class="col-9">
-                <input type="text" name="last_name">
+                <input type="text" name="last_name" id="lastName">
               </div>
             </div>
             <div class="row">
@@ -93,7 +90,7 @@
                 <label>Email ID</label>
               </div>
               <div class="col-9">
-                <input type="email" name="email">
+                <input type="email" name="email" id="email">
               </div>
             </div>
             <div class="row">
@@ -101,7 +98,7 @@
                 <label>Username</label>
               </div>
               <div class="col-9">
-                <input type="text" name="username">
+                <input type="text" name="username" id="username">
               </div>
             </div>
             <div class="row">
@@ -138,17 +135,16 @@
                 <input type="text" value="+91">
               </div>
               <div class="col-7" style="padding-left: 0">
-                <input type="number" name="contact" style="width: 87%">
+                <input type="number" name="contact" style="width: 87%" id="phoneNumber">
               </div>
             </div>
           <input type="hidden" name="token" value="signpo354">
           <input type="hidden" name="temp" value="true">
       </div>
       <div class="modal-footer">
-        <input type="button" class="btn btn-secondary" data-dismiss="modal" value="Cancel">
-        <input type="submit" class="btn btn-primary" value="Sign Up">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="submit" class="btn btn-primary" onclick="signupSubmit()">Sign Up</button>
       </div>
-    </form>
     </div>
   </div>
 </div>
