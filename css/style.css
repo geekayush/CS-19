@@ -83,6 +83,15 @@ body{
 	width: 100vw;
 	font-family: GamePlayed;
 }
+video[poster]{
+width:100vw;
+}
+@media(max-width: 768px){
+  video[poster]{
+height:100vw;
+width: auto;
+}
+}
 .fullscreen-video-wrap{
 	position: absolute;
 	top: 0;
